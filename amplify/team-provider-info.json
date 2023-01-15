@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fintechreact-dev-33005-authRole",
+      "UnauthRoleArn": "arn:aws:iam::249164115056:role/amplify-fintechreact-dev-33005-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::249164115056:role/amplify-fintechreact-dev-33005-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-fintechreact-dev-33005-deployment",
+      "UnauthRoleName": "amplify-fintechreact-dev-33005-unauthRole",
+      "StackName": "amplify-fintechreact-dev-33005",
+      "StackId": "arn:aws:cloudformation:us-east-1:249164115056:stack/amplify-fintechreact-dev-33005/705e3ea0-94a6-11ed-aaa7-0a3596b49a35",
+      "AmplifyAppId": "d1j24a5fwaou48"
+    },
+    "categories": {
+      "api": {
+        "fintechreact": {}
+      }
+    }
+  }
+}
