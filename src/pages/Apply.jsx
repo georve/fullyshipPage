@@ -3,10 +3,6 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 
 import Illustration from '../images/hero-illustration.svg';
-import LogoFacebook from '../images/logo-facebook.svg';
-import LogoNike from '../images/logo-nike.svg';
-import LogoSamsung from '../images/logo-samsung.svg';
-import LogoDisney from '../images/logo-disney.svg';
 import { Amplify, API, graphqlOperation } from 'aws-amplify'
 import { createInvestor as createInvestorMutation,
          updateInvestor as updateInvestorMuation,

@@ -14,6 +14,15 @@
     "categories": {
       "api": {
         "fintechreact": {}
+      },
+      "auth": {
+        "fintechreact70fc5032": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1j24a5fwaou48",
+          "type": "manual"
+        }
       }
     }
   }

@@ -13,6 +13,7 @@ import AOS from 'aos';
 import Home from './pages/Home';
 import Apply from './pages/Apply';
 import Support from './pages/Support';
+import Investors from './pages/Investors';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/apply" element={<Apply />} />
         <Route path="/support" element={<Support />} />
+        <Route path="/investors" element={<Investors />} />
       </Routes>
     </>
   );
