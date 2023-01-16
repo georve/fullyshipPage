@@ -12,14 +12,9 @@ export default defineConfig({
   },
   plugins: [react()],
   resolve: {
-    alias: [
-      {
-        find: /^~.+/,
-        replacement: (val) => {
-          return val.replace(/^~/, "");
-        },
-      },
-    ],
+    alias: {
+      './runtimeConfig': './runtimeConfig.browser', // <-- Fix from above
+    },
   },
   optimizeDeps: {
     esbuildOptions: {
