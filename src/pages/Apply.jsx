@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 
 import Illustration from '../images/hero-illustration.svg';
@@ -6,8 +7,54 @@ import LogoFacebook from '../images/logo-facebook.svg';
 import LogoNike from '../images/logo-nike.svg';
 import LogoSamsung from '../images/logo-samsung.svg';
 import LogoDisney from '../images/logo-disney.svg';
+import { Amplify, API, graphqlOperation } from 'aws-amplify'
+import { createInvestor as createInvestorMutation,
+         updateInvestor as updateInvestorMuation,
+         deleteInvestor as deleteInvestorMutation } from './../graphql/mutations'
+import { listInvestors,getInvestor } from './../graphql/queries'
+
+const initialState = { firstName: '', 
+                       lastName:'',
+                       email:'',
+                       phone:'',
+                       country:'',
+                       contacted:false,
+                       interested:false,
+                       comments: '' }
 
 function Apply() {
+  const [formState, setFormState] = useState(initialState)
+  const [todos, setTodos] = useState([])
+  const [selectedOption, setSelectedOption] = useState(initialState.country);
+
+  useEffect(() => {
+    fetchTodos()
+  }, [])
+
+  function setInput(key, value) {
+    setFormState({ ...formState, [key]: value })
+  }
+
+  async function fetchTodos() {
+    try {
+      const todoData = await API.graphql(graphqlOperation(listInvestors))
+      const todos = todoData.data.listInvestors.items
+      setTodos(todos)
+    } catch (err) { console.log('error fetching todos') }
+  }
+
+  async function addTodo() {
+    try {
+      if (!formState.firstName || !formState.lastName) return
+      const todo = { ...formState }
+      setTodos([...todos, todo])
+      setFormState(initialState)
+      await API.graphql(graphqlOperation(createInvestorMutation, {input: todo}))
+    } catch (err) {
+      console.log('error creating todo:', err)
+    }
+  }
+
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       {/* Site header */}
@@ -86,33 +133,7 @@ function Apply() {
                   </div>
 
                   {/* Press logos */}
-                  <div className="w-full">
-                    <div className="text-xs text-slate-400 font-[350] uppercase tracking-wider text-center lg:text-left mb-5">
-                      Trusted bt the best
-                    </div>
 
-                    <div className="flex flex-nowrap items-center justify-center lg:justify-start -m-4 lg:-m-2 xl:-m-4">
-                      {/* Facebook */}
-                      <div className="p-4 lg:p-2 xl:p-4">
-                        <img className="inline-flex max-w-full" src={LogoFacebook} width="99" height="19" alt="Facebook" />
-                      </div>
-
-                      {/* Nike */}
-                      <div className="p-4 lg:p-2 xl:p-4">
-                        <img className="inline-flex max-w-full" src={LogoNike} width="64" height="23" alt="Nike" />
-                      </div>
-
-                      {/* Samsung */}
-                      <div className="p-4 lg:p-2 xl:p-4">
-                        <img className="inline-flex max-w-full" src={LogoSamsung} width="95" height="32" alt="Samsung" />
-                      </div>
-
-                      {/* Disney */}
-                      <div className="p-4 lg:p-2 xl:p-4">
-                        <img className="inline-flex max-w-full" src={LogoDisney} width="86" height="36" alt="Disney" />
-                      </div>
-                    </div>
-                  </div>
                 </div>
 
                 {/* Right side */}
@@ -135,14 +156,20 @@ function Apply() {
                   <div className="flex pt-12 lg:pt-0 lg:pl-12 xl:pl-20">
                     <div className="w-full max-w-[480px] mx-auto lg:w-[480px] lg:max-w-none lg:mx-0 xl:w-[512px] bg-white p-6 shadow-2xl">
                       {/* Form */}
-                      <form>
+                      <form onSubmit={addTodo}>
                         <div className="space-y-4">
                           <div className="sm:flex items-start justify-between sm:space-x-4">
                             <label className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0" htmlFor="first-name">
                               First name
                             </label>
                             <div className="sm:w-72 xl:w-80 shrink-0">
-                              <input id="first-name" className="form-input text-sm py-2 w-full" type="text" placeholder="Patrick" required />
+                              <input id="first-name" 
+                                     className="form-input text-sm py-2 w-full" 
+                                     onChange={event => setInput( 'firstName' , event.target.value)}
+                                     value={formState.firstName}
+                                     type="text" 
+                                     placeholder="First Name" 
+                                     required />
                             </div>
                           </div>
                           <div className="sm:flex items-start justify-between sm:space-x-4">
@@ -150,39 +177,39 @@ function Apply() {
                               Last name
                             </label>
                             <div className="sm:w-72 xl:w-80 shrink-0">
-                              <input id="last-name" className="form-input text-sm py-2 w-full" type="text" placeholder="Mills" required />
+                              <input id="last-name" 
+                              className="form-input text-sm py-2 w-full" 
+                              onChange={event => setInput( 'lastName' , event.target.value)}
+                              value={formState.lastName}
+                              type="text" 
+                              placeholder="Last Name" required />
                             </div>
                           </div>
                           <div className="sm:flex items-start justify-between sm:space-x-4">
                             <label className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0" htmlFor="email">
-                              Work email
+                              email
                             </label>
                             <div className="sm:w-72 xl:w-80 shrink-0">
-                              <input id="email" className="form-input text-sm py-2 w-full" type="email" placeholder="patrick@example.com" required />
+                              <input id="email" 
+                              className="form-input text-sm py-2 w-full" 
+                              type="email" 
+                              onChange={event => setInput( 'email' , event.target.value)}
+                              value={formState.email}
+                              placeholder="email" required />
                             </div>
                           </div>
                           <div className="sm:flex items-start justify-between sm:space-x-4">
-                            <label className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0" htmlFor="website">
-                              Website
+                            <label className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0" htmlFor="phone">
+                              Phone
                             </label>
                             <div className="sm:w-72 xl:w-80 shrink-0">
-                              <input id="website" className="form-input text-sm py-2 w-full" type="text" placeholder="example.com" required />
-                            </div>
-                          </div>
-                          <div className="sm:flex items-start justify-between sm:space-x-4">
-                            <label
-                              className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0"
-                              htmlFor="company-size"
-                            >
-                              Company size
-                            </label>
-                            <div className="sm:w-72 xl:w-80 shrink-0">
-                              <select id="company-size" className="form-select text-sm py-2 w-full" required>
-                                <option>Less than 10</option>
-                                <option>More than 10</option>
-                                <option>More than 20</option>
-                                <option>More than 50</option>
-                              </select>
+                              <input id="phone" 
+                              className="form-input text-sm py-2 w-full" 
+                              onChange={event => setInput( 'phone' , event.target.value)}
+                              value={formState.phone}
+                              type="text" 
+                              placeholder="phone" 
+                              required />
                             </div>
                           </div>
                           <div className="sm:flex items-start justify-between sm:space-x-4">
@@ -190,9 +217,14 @@ function Apply() {
                               Country
                             </label>
                             <div className="sm:w-72 xl:w-80 shrink-0">
-                              <select id="country" className="form-select text-sm py-2 w-full" required>
+                              <select id="country" 
+                               onChange={e => setSelectedOption(e.target.value)}
+                               value={selectedOption}
+                               className="form-select text-sm py-2 w-full" required>
                                 <option>United States</option>
                                 <option>United Kingdom</option>
+                                <option>Venezuela</option>
+                                <option>Colombia</option>
                                 <option>Germany</option>
                                 <option>Italy</option>
                               </select>
@@ -200,10 +232,14 @@ function Apply() {
                           </div>
                           <div className="sm:flex items-start justify-between sm:space-x-4">
                             <label className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0" htmlFor="comment">
-                              Anything else?
+                              comentarios
                             </label>
                             <div className="sm:w-72 xl:w-80 shrink-0">
-                              <textarea id="comment" className="form-textarea text-sm py-2 w-full" rows={4} />
+                              <textarea id="comment" 
+                              className="form-textarea text-sm py-2 w-full" 
+                              onChange={event => setInput( 'comments' , event.target.value)}
+                              value={formState.comments}
+                              rows={4} />
                             </div>
                           </div>
                         </div>
