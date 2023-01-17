@@ -25,5 +25,29 @@
         }
       }
     }
+  },
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fintechreact-staging-235436-authRole",
+      "UnauthRoleArn": "arn:aws:iam::249164115056:role/amplify-fintechreact-staging-235436-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::249164115056:role/amplify-fintechreact-staging-235436-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-fintechreact-staging-235436-deployment",
+      "UnauthRoleName": "amplify-fintechreact-staging-235436-unauthRole",
+      "StackName": "amplify-fintechreact-staging-235436",
+      "StackId": "arn:aws:cloudformation:us-east-1:249164115056:stack/amplify-fintechreact-staging-235436/aad2a100-961a-11ed-9cb9-0eb31e68836b",
+      "AmplifyAppId": "d1j24a5fwaou48"
+    },
+    "categories": {
+      "auth": {
+        "fintechreact70fc5032": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1j24a5fwaou48",
+          "type": "manual"
+        }
+      }
+    }
   }
 }
