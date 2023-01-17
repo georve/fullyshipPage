@@ -47,6 +47,9 @@
           "appId": "d1j24a5fwaou48",
           "type": "manual"
         }
+      },
+      "api": {
+        "fintechreact": {}
       }
     }
   }
