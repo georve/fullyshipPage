@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test":"jest"
+    "test": "jest"
   },
   "dependencies": {
     "@aws-amplify/ui-react": "^4.3.4",
