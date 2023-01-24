@@ -8,9 +8,58 @@ import { createInvestor as createInvestorMutation,
          updateInvestor as updateInvestorMuation,
          deleteInvestor as deleteInvestorMutation } from './../graphql/mutations'
 import { listInvestors,getInvestor } from './../graphql/queries'
+import Table from './../components/table.jsx'
 
 
 function Investors() {
+  const [rowdata, setRowData] = useState([])
+
+  const onAddRowClick = () => {
+    setRowData(
+      rowdata.concat({ firstName: "",lastName: "", email: "",phone: "", country: "", comment: "" })
+    )
+  }
+  const columns = [
+    {
+      Header: "Name",
+      accessor: "firstName",
+    },
+    {
+      Header: "LastName",
+      accessor: "lastName",
+    },
+    {
+      Header: "Email",
+      accessor: "email",
+    },
+    {
+      Header: "Phone",
+      accessor: "phone",
+    },
+    {
+      Header: "Country",
+      accessor: "country",
+    },
+    {
+      Header: "Comment",
+      accessor: "comment",
+    },
+  ]
+  /*const [todos, setTodos] = useState([]);
+
+  useEffect(() => {
+    fetchTodos()
+  }, [])
+
+
+
+  async function fetchTodos() {
+    try {
+      const todoData = await API.graphql(graphqlOperation(listInvestors))
+      const todos = todoData.data.listInvestors.items
+      setTodos(todos)
+    } catch (err) { console.log('error fetching todos') }
+  }*/
 
     return (
         <div className="flex flex-col min-h-screen overflow-hidden">
@@ -52,40 +101,25 @@ function Investors() {
                   <div className="lg:flex lg:space-x-12 xl:space-x-16">
                     {/* Left side */}
                     <div className="grow lg:mt-16 mb-16 lg:mb-0 text-center lg:text-left">
-                      <h1 className="h2 mb-8">Build flexible cards for your business</h1>
+                      <h1 className="h2 mb-8">Listados de Inversionistas de FullyShip</h1>
     
                       <div className="mb-12">
                         <ul className="inline-flex flex-col text-slate-500 space-y-2.5">
-                          <li className="flex items-center text-left">
-                            <svg className="shrink-0 mr-3" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                              <circle className="fill-blue-100" cx="10" cy="10" r="10" />
-                              <path
-                                className="fill-blue-500"
-                                d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z"
-                              />
-                            </svg>
-                            <span>Create cards that work exactly as you configured them</span>
-                          </li>
-                          <li className="flex items-center text-left">
-                            <svg className="shrink-0 mr-3" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                              <circle className="fill-blue-100" cx="10" cy="10" r="10" />
-                              <path
-                                className="fill-blue-500"
-                                d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z"
-                              />
-                            </svg>
-                            <span>Focus critical resources on your core business</span>
-                          </li>
-                          <li className="flex items-center text-left">
-                            <svg className="shrink-0 mr-3" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                              <circle className="fill-blue-100" cx="10" cy="10" r="10" />
-                              <path
-                                className="fill-blue-500"
-                                d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z"
-                              />
-                            </svg>
-                            <span>Make real-time decisions on charges and spendings.</span>
-                          </li>
+
+                        <div className="container mx-auto">
+                          <button
+                                onClick={onAddRowClick}
+                                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                           >
+                           Add Row
+                         </button>
+                         <div className="flex justify-center mt-8">
+                            <Table columns={columns} data={rowdata} />
+                         </div>
+                       </div>
+
+
+
                         </ul>
                       </div>
     
@@ -111,102 +145,7 @@ function Investors() {
                       />
     
                       <div className="flex pt-12 lg:pt-0 lg:pl-12 xl:pl-20">
-                        <div className="w-full max-w-[480px] mx-auto lg:w-[480px] lg:max-w-none lg:mx-0 xl:w-[512px] bg-white p-6 shadow-2xl">
-                          {/* Form */}
-                          <form onSubmit={addTodo}>
-                            <div className="space-y-4">
-                              <div className="sm:flex items-start justify-between sm:space-x-4">
-                                <label className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0" htmlFor="first-name">
-                                  First name
-                                </label>
-                                <div className="sm:w-72 xl:w-80 shrink-0">
-                                  <input id="first-name" 
-                                         className="form-input text-sm py-2 w-full" 
-                                         onChange={event => setInput( 'firstName' , event.target.value)}
-                                         value={formState.firstName}
-                                         type="text" 
-                                         placeholder="First Name" 
-                                         required />
-                                </div>
-                              </div>
-                              <div className="sm:flex items-start justify-between sm:space-x-4">
-                                <label className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0" htmlFor="last-name">
-                                  Last name
-                                </label>
-                                <div className="sm:w-72 xl:w-80 shrink-0">
-                                  <input id="last-name" 
-                                  className="form-input text-sm py-2 w-full" 
-                                  onChange={event => setInput( 'lastName' , event.target.value)}
-                                  value={formState.lastName}
-                                  type="text" 
-                                  placeholder="Last Name" required />
-                                </div>
-                              </div>
-                              <div className="sm:flex items-start justify-between sm:space-x-4">
-                                <label className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0" htmlFor="email">
-                                  email
-                                </label>
-                                <div className="sm:w-72 xl:w-80 shrink-0">
-                                  <input id="email" 
-                                  className="form-input text-sm py-2 w-full" 
-                                  type="email" 
-                                  onChange={event => setInput( 'email' , event.target.value)}
-                                  value={formState.email}
-                                  placeholder="email" required />
-                                </div>
-                              </div>
-                              <div className="sm:flex items-start justify-between sm:space-x-4">
-                                <label className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0" htmlFor="phone">
-                                  Phone
-                                </label>
-                                <div className="sm:w-72 xl:w-80 shrink-0">
-                                  <input id="phone" 
-                                  className="form-input text-sm py-2 w-full" 
-                                  onChange={event => setInput( 'phone' , event.target.value)}
-                                  value={formState.phone}
-                                  type="text" 
-                                  placeholder="phone" 
-                                  required />
-                                </div>
-                              </div>
-                              <div className="sm:flex items-start justify-between sm:space-x-4">
-                                <label className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0" htmlFor="country">
-                                  Country
-                                </label>
-                                <div className="sm:w-72 xl:w-80 shrink-0">
-                                  <select id="country" 
-                                   onChange={e => setSelectedOption(e.target.value)}
-                                   value={selectedOption}
-                                   className="form-select text-sm py-2 w-full" required>
-                                    <option>United States</option>
-                                    <option>United Kingdom</option>
-                                    <option>Venezuela</option>
-                                    <option>Colombia</option>
-                                    <option>Germany</option>
-                                    <option>Italy</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div className="sm:flex items-start justify-between sm:space-x-4">
-                                <label className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0" htmlFor="comment">
-                                  comentarios
-                                </label>
-                                <div className="sm:w-72 xl:w-80 shrink-0">
-                                  <textarea id="comment" 
-                                  className="form-textarea text-sm py-2 w-full" 
-                                  onChange={event => setInput( 'comments' , event.target.value)}
-                                  value={formState.comments}
-                                  rows={4} />
-                                </div>
-                              </div>
-                            </div>
-                            <div className="mt-6 text-right">
-                              <button className="btn-sm inline-flex items-center text-blue-50 bg-blue-500 hover:bg-blue-600 group shadow-sm">
-                                Submit the form
-                              </button>
-                            </div>
-                          </form>
-                        </div>
+
                       </div>
                     </div>
                   </div>

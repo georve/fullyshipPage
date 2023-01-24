@@ -36,7 +36,7 @@ function Hero() {
               <p className="text-lg text-blue-200 mb-8" data-aos="fade-up" data-aos-delay="200">
                 Con fullyship puedes hacerle llegar tu dinero desde cualquier pais a tus familiares y con la misma app pagar optimizando
                 el uso de tu dinero
-                <br className="hidden md:block" /> have to set it up once, and get beautiful results forever.
+                <br className="hidden md:block" /> Solo es necesario descargar la App y configurar, sin necesidad de ir al banco.
               </p>
 
               {/* Buttons */}

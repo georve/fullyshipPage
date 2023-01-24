@@ -91,7 +91,7 @@ function Apply() {
               <div className="lg:flex lg:space-x-12 xl:space-x-16">
                 {/* Left side */}
                 <div className="grow lg:mt-16 mb-16 lg:mb-0 text-center lg:text-left">
-                  <h1 className="h2 mb-8">Build flexible cards for your business</h1>
+                  <h1 className="h2 mb-8">Deseas ser parte del grupo de personas que disfrutara los privilegios de envió de remesas a Venezuela</h1>
 
                   <div className="mb-12">
                     <ul className="inline-flex flex-col text-slate-500 space-y-2.5">
@@ -103,7 +103,7 @@ function Apply() {
                             d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z"
                           />
                         </svg>
-                        <span>Create cards that work exactly as you configured them</span>
+                        <span>Tu opinión es muy importante porque este producto se está construyendo según tus necesidades</span>
                       </li>
                       <li className="flex items-center text-left">
                         <svg className="shrink-0 mr-3" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -113,7 +113,7 @@ function Apply() {
                             d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z"
                           />
                         </svg>
-                        <span>Focus critical resources on your core business</span>
+                        <span>Deja tus datos en el formulario, que formaras parte de ese publico que dara una solucion al problema de las remesas</span>
                       </li>
                       <li className="flex items-center text-left">
                         <svg className="shrink-0 mr-3" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -123,7 +123,7 @@ function Apply() {
                             d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z"
                           />
                         </svg>
-                        <span>Make real-time decisions on charges and spendings.</span>
+                        <span>Nuestro equipo te contactara para captar tus necesidades y plasmarlas en el App</span>
                       </li>
                     </ul>
                   </div>
