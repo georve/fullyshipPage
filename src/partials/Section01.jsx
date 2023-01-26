@@ -35,9 +35,9 @@ function Section01() {
                   </g>
                 </svg>
               </div>
-              <h4 className="text-xl font-bold mb-1">Create custom cards</h4>
+              <h4 className="text-xl font-bold mb-1">Descargue la App</h4>
               <p className="text-slate-500">
-                Create cards that work exactly as you configured them. Make real-time decisions on charges and spendings.
+                Con solo descargar la app se inicia su experiencia de enviar y pagar
               </p>
             </div>
 
@@ -69,9 +69,9 @@ function Section01() {
                   </g>
                 </svg>
               </div>
-              <h4 className="text-xl font-bold mb-1">Create custom cards</h4>
+              <h4 className="text-xl font-bold mb-1">Configure su perfil y el de sus padres</h4>
               <p className="text-slate-500">
-                Create cards that work exactly as you configured them. Make real-time decisions on charges and spendings.
+                Para el envio de dinero tienes que registrar tus datos y el de tus padres en el pais destino.
               </p>
             </div>
 
@@ -102,9 +102,10 @@ function Section01() {
                   </g>
                 </svg>
               </div>
-              <h4 className="text-xl font-bold mb-1">Create custom cards</h4>
+              <h4 className="text-xl font-bold mb-1">Envia dinero y ya esta disponible para gastarlo en tus comercios</h4>
               <p className="text-slate-500">
-                Create cards that work exactly as you configured them. Make real-time decisions on charges and spendings.
+                Con la tarjeta de fullyship, huellas digitales o codigos QR puede disponer de tu dinero o incluso lo
+                puedes tener en efectivo para poder hacer uso del mismo.
               </p>
             </div>
           </div>
