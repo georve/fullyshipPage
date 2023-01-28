@@ -213,17 +213,15 @@ function Apply() {
                               Country
                             </label>
                             <div className="sm:w-72 xl:w-80 shrink-0">
-                              <select id="country" 
-                               onChange={e => setSelectedOption(e.target.value)}
-                               value={selectedOption}
-                               className="form-select text-sm py-2 w-full" required>
-                                <option>United States</option>
-                                <option>United Kingdom</option>
-                                <option>Venezuela</option>
-                                <option>Colombia</option>
-                                <option>Germany</option>
-                                <option>Italy</option>
-                              </select>
+                              <div className="sm:w-72 xl:w-80 shrink-0">
+                              <input id="country" 
+                              className="form-input text-sm py-2 w-full" 
+                              onChange={event => setInput( 'country' , event.target.value)}
+                              value={formState.country}
+                              type="text" 
+                              placeholder="country" 
+                              required />
+                            </div>
                             </div>
                           </div>
                           <div className="sm:flex items-start justify-between sm:space-x-4">
@@ -241,7 +239,7 @@ function Apply() {
                         </div>
                         <div className="mt-6 text-right">
                           <button className="btn-sm inline-flex items-center text-blue-50 bg-blue-500 hover:bg-blue-600 group shadow-sm">
-                            Submit the form
+                            enviar
                           </button>
                         </div>
                       </form>
