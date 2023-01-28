@@ -21,7 +21,7 @@ function Hero() {
             <div className="md:w-[600px]">
               {/* Copy */}
               <h1 className="h1 text-white mb-6" data-aos="fade-up" data-aos-delay="100">
-                Envia tus remeses de manera rapida y segura a tus {' '}
+                    Envía tus remeses de manera rápida y segura a tus {' '}
                 <span className="relative inline-flex items-center justify-center">
                   <svg className="absolute -z-10" width="246" height="76" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -34,9 +34,9 @@ function Hero() {
                 </span>
               </h1>
               <p className="text-lg text-blue-200 mb-8" data-aos="fade-up" data-aos-delay="200">
-                Con fullyship puedes hacerle llegar tu dinero desde cualquier pais a tus familiares y con la misma app pagar optimizando
-                el uso de tu dinero
-                <br className="hidden md:block" /> have to set it up once, and get beautiful results forever.
+                 Con fullyship puedes hacerle llegar tu dinero desde cualquier país a tus familiares y con la misma app 
+                 pagar optimizando el uso de tu dinero.
+                <br className="hidden md:block" /> Solo tienes que instalar la App, y empieza a disfrutar de todas las ventajas de enviar dinero y gastarlo.
               </p>
 
               {/* Buttons */}
@@ -53,14 +53,6 @@ function Hero() {
                         <path d="M1 6.002h7.586L6.293 8.295a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.416l-4-4a1 1 0 0 0-1.414 1.416l2.293 2.293H1a1 1 0 1 0 0 2Z" />
                       </svg>
                     </span>
-                  </Link>
-                </div>
-                <div>
-                  <Link
-                    className="btn-sm w-full inline-flex items-center text-white bg-gradient-to-tr from-blue-400 hover:bg-blue-500 shadow-sm relative before:absolute before:inset-0 before:bg-blue-400 before:bg-opacity-60 before:-z-10 before:rounded-full"
-                    to="/support"
-                  >
-                    Read documentation
                   </Link>
                 </div>
               </div>

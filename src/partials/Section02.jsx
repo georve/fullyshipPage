@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 import QuoteAuthor from '../images/quote-author-01.jpg';
 import CardsIllustration from '../images/cards-illustration.svg';
@@ -23,24 +25,25 @@ function Section02() {
 
                 {/* Copy */}
                 <h2 className="h2 text-white mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-2]" data-aos-delay="100">
-                  Build a flexible card program for your business needs
+                  Fullyship te hace acreedor de una tarjeta internacional en la cual puedes operar en cualquier parte del mundo
                 </h2>
                 <p className="text-lg text-slate-400 mb-8" data-aos="fade-up" data-aos-anchor="[data-aos-id-2]" data-aos-delay="200">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim
-                  veniam, quis nostrud exercitation.
+                  Con los convenios con banco nacionale e internacionales, puedes tener acceso de tu dinero en cualquier parte del mundo
+                  solo se cobrara una comision baja por el uso de la tarjeta y sacar dinero de los cajeros ATM en la moneda local del pais.
+                  Todo esto con el fin de brindar comodidad al momento de utilizar tu dinero de forma eficiente.
                 </p>
 
                 {/* Button */}
                 <div className="max-w-xs mx-auto sm:max-w-none mb-8" data-aos="fade-up" data-aos-anchor="[data-aos-id-2]" data-aos-delay="300">
-                  <div>
-                    <a className="btn-sm inline-flex items-center text-blue-50 bg-blue-500 hover:bg-blue-600 group shadow-sm" href="apply.html">
-                      Get your card
+                  <div>                 
+                    <Link className="btn-sm inline-flex items-center text-blue-50 bg-blue-500 hover:bg-blue-600 group shadow-sm"  to="/apply">
+                      Descarga la app
                       <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2">
                         <svg className="fill-current" width="12" height="10" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 6.002h7.586L6.293 8.295a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.416l-4-4a1 1 0 0 0-1.414 1.416l2.293 2.293H1a1 1 0 1 0 0 2Z" />
                         </svg>
                       </span>
-                    </a>
+                      </Link>
                   </div>
                 </div>
 
