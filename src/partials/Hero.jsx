@@ -55,14 +55,6 @@ function Hero() {
                     </span>
                   </Link>
                 </div>
-                <div>
-                  <Link
-                    className="btn-sm w-full inline-flex items-center text-white bg-gradient-to-tr from-blue-400 hover:bg-blue-500 shadow-sm relative before:absolute before:inset-0 before:bg-blue-400 before:bg-opacity-60 before:-z-10 before:rounded-full"
-                    to="/support"
-                  >
-                    Read documentation
-                  </Link>
-                </div>
               </div>
             </div>
 
