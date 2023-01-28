@@ -19,9 +19,10 @@ function Section05() {
             <div className="relative max-w-xl mx-auto md:max-w-none text-center md:text-left">
               {/* Section header */}
               <div className="md:max-w-3xl mb-12 md:mb-20" data-aos="fade-up">
-                <h2 className="h2 text-white mb-4">Get started in minutes and connect all your accounts in one place</h2>
+                <h2 className="h2 text-white mb-4">Abre tu cuenta en cuestion de minutos y ya estas en la posibilidad de enviar dinero al instante</h2>
                 <p className="text-lg text-blue-200 mb-8">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 Puedes utilizar tu dinero usando tu app, o tambien puedes enviarlo a tus bancos, nacionales e internacionales, ya que estamos en
+                 expansion e inciamos convenio con une gama de Bancos donde puede masificar la forma como gastas tu dinero.
                 </p>
               </div>
 
@@ -50,9 +51,9 @@ function Section05() {
                   <div className="mb-3">
                     <div className="flex items-center justify-center font-bold text-teal-600 bg-teal-200 h-11 w-11 rounded-full">1</div>
                   </div>
-                  <h4 className="text-white text-xl font-bold mb-1">Download the app</h4>
+                  <h4 className="text-white text-xl font-bold mb-1">Descargue la App</h4>
                   <p className="text-blue-200">
-                    Create cards that work exactly as you configured them. Make real-time decisions on charges and spendings.
+                    Desde su playstore preferido, puede descargar fullyShip para iniciar su viaje al envio de remesas.
                   </p>
                 </div>
 
@@ -61,9 +62,9 @@ function Section05() {
                   <div className="mb-3">
                     <div className="flex items-center justify-center font-bold text-teal-600 bg-teal-200 h-11 w-11 rounded-full">2</div>
                   </div>
-                  <h4 className="text-white text-xl font-bold mb-1">Request your card</h4>
+                  <h4 className="text-white text-xl font-bold mb-1">Configure su perfil</h4>
                   <p className="text-blue-200">
-                    Create cards that work exactly as you configured them. Make real-time decisions on charges and spendings.
+                    Con pasos sencillos puedes configurar tu perfil y el de tus adultos mayores para que reciban su dinero.
                   </p>
                 </div>
 
@@ -72,9 +73,9 @@ function Section05() {
                   <div className="mb-3">
                     <div className="flex items-center justify-center font-bold text-teal-600 bg-teal-200 h-11 w-11 rounded-full">3</div>
                   </div>
-                  <h4 className="text-white text-xl font-bold mb-1">Connect all your account</h4>
+                  <h4 className="text-white text-xl font-bold mb-1">Envia dinero a todos sus familiares</h4>
                   <p className="text-blue-200">
-                    Create cards that work exactly as you configured them. Make real-time decisions on charges and spendings.
+                  Con solo pocos click podrás hacerle llegar el dinero a tus familiares y ya podrán hacer uso de su dinero.
                   </p>
                 </div>
               </div>

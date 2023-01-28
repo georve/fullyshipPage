@@ -38,6 +38,7 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exact path="/home" element={<Home />} />
         <Route path="/apply" element={<Apply />} />
         <Route path="/support" element={<Support />} />
         <Route path="/investors" element={<Investors />} />

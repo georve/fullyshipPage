@@ -11,8 +11,8 @@ function Cta() {
           <div className="sm:flex sm:flex-col lg:flex-row justify-between items-center">
             {/* CTA content */}
             <div className="mb-6 lg:mr-16 lg:mb-0 text-center lg:text-left">
-              <p className="text-xl text-blue-500 font-[550] mb-3">What are you waiting for?</p>
-              <h2 className="h2 text-slate-100">Get the only custom super card</h2>
+              <p className="text-xl text-blue-500 font-[550] mb-3">¿Que estás esperando?</p>
+              <h2 className="h2 text-slate-100">Descarga la app</h2>
             </div>
 
             {/* Buttons */}
@@ -33,7 +33,7 @@ function Cta() {
                     className="btn-sm w-full inline-flex items-center text-white bg-slate-700 hover:bg-slate-800 shadow-sm relative before:absolute before:inset-0 before:bg-blue-400 before:bg-opacity-60 before:-z-10 before:rounded-full"
                     href="#0"
                   >
-                    Get in touch
+                    registra tus datos
                   </a>
                 </div>
               </div>

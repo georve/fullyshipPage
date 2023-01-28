@@ -25,10 +25,12 @@ export default defineConfig({
     },
 },
   build: {
+    outDir:'dist',
+    assetsDir:'dist/assets',
     chunkSizeWarningLimit: 1600,
     commonjsOptions: {
       transformMixedEsModules: true,
-    }
+    },
   } 
 })
 
