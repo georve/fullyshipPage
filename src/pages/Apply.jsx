@@ -239,7 +239,7 @@ function Apply() {
                         </div>
                         <div className="mt-6 text-right">
                           <button className="btn-sm inline-flex items-center text-blue-50 bg-blue-500 hover:bg-blue-600 group shadow-sm">
-                            Submit the form
+                            enviar
                           </button>
                         </div>
                       </form>
