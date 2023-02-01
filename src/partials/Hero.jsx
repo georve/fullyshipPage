@@ -21,7 +21,7 @@ function Hero() {
             <div className="md:w-[600px]">
               {/* Copy */}
               <h1 className="h1 text-white mb-6" data-aos="fade-up" data-aos-delay="100">
-                  Envía tus remesas de manera rápida y segura a tus {' '}
+                  Envía remesas de manera rápida y segura a tus {' '}
                 <span className="relative inline-flex items-center justify-center">
                   <svg className="absolute -z-10" width="246" height="76" xmlns="http://www.w3.org/2000/svg">
                     <path
