@@ -156,7 +156,7 @@ function Apply() {
                         <div className="space-y-4">
                           <div className="sm:flex items-start justify-between sm:space-x-4">
                             <label className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0" htmlFor="first-name">
-                              First name
+                              Nombres
                             </label>
                             <div className="sm:w-72 xl:w-80 shrink-0">
                               <input id="first-name" 
@@ -170,7 +170,7 @@ function Apply() {
                           </div>
                           <div className="sm:flex items-start justify-between sm:space-x-4">
                             <label className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0" htmlFor="last-name">
-                              Last name
+                              Apellidos
                             </label>
                             <div className="sm:w-72 xl:w-80 shrink-0">
                               <input id="last-name" 
@@ -196,7 +196,7 @@ function Apply() {
                           </div>
                           <div className="sm:flex items-start justify-between sm:space-x-4">
                             <label className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0" htmlFor="phone">
-                              Phone
+                              Telefono
                             </label>
                             <div className="sm:w-72 xl:w-80 shrink-0">
                               <input id="phone" 
@@ -210,7 +210,7 @@ function Apply() {
                           </div>
                           <div className="sm:flex items-start justify-between sm:space-x-4">
                             <label className="block text-sm leading-5 mt-2.5 text-slate-800 font-[550] text-left mb-1.5 sm:mb-0" htmlFor="country">
-                              Country
+                              Pais
                             </label>
                             <div className="sm:w-72 xl:w-80 shrink-0">
                               <div className="sm:w-72 xl:w-80 shrink-0">

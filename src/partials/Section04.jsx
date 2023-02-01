@@ -19,17 +19,17 @@ function Section04() {
               <div className="w-[512px] max-w-full shrink-0">
                 {/* Copy */}
                 <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-4]" data-aos-delay="100">
-                  Puedes obtener descuentos con nuestras marcas afiliadas al plan de puntos
+                  Puedes obtener descuentos con nuestras marcas afiliadas al plan de puntos 
                 </h2>
                 <p className="text-lg text-slate-500 mb-6" data-aos="fade-up" data-aos-anchor="[data-aos-id-4]" data-aos-delay="200">
-                  AL usar nuestra app para hacer pagos, ya cuentas con beneficios con nuestros partners
+                  al usar nuestra aplicación para hacer pagos, ya cuentas con beneficios con nuestros socios
                 </p>
 
                 {/* Lists */}
                 <div className="sm:columns-2 mb-8 space-y-8 sm:space-y-0" data-aos="fade-up" data-aos-anchor="[data-aos-id-4]" data-aos-delay="300">
                   {/* Column #1 */}
                   <div>
-                    <h5 className="font-bold mb-5">Tiendas Fisicas</h5>
+                    <h5 className="font-bold mb-5">Tiendas Físicas</h5>
                     <ul className="inline-flex flex-col text-slate-500 space-y-2.5">
                       <li className="flex items-center">
                         <svg className="shrink-0 mr-3" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -205,7 +205,7 @@ function Section04() {
                 <div className="max-w-xs mx-auto sm:max-w-none" data-aos="fade-up" data-aos-anchor="[data-aos-id-4]" data-aos-delay="300">
                   <div>
                     <Link className="btn-sm inline-flex items-center text-blue-50 bg-blue-500 hover:bg-blue-600 group shadow-sm"  to="/apply">
-                      Descarga la app
+                      Descarga la aplicación
                       <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2">
                         <svg className="fill-current" width="12" height="10" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 6.002h7.586L6.293 8.295a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.416l-4-4a1 1 0 0 0-1.414 1.416l2.293 2.293H1a1 1 0 1 0 0 2Z" />

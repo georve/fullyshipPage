@@ -22,20 +22,20 @@ function Section03() {
               <div className="w-[512px] max-w-full shrink-0 md:order-1">
                 {/* Copy */}
                 <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-3]" data-aos-delay="100">
-                   Gasta tu dinero donde quieras, paga como sea sin ningún tipo de impedimento
+                     Utiliza tu dinero donde quieras, paga como sea y sin ningún tipo de impedimento
                 </h2>
                 <p className="text-lg text-slate-500 mb-8" data-aos="fade-up" data-aos-anchor="[data-aos-id-3]" data-aos-delay="200">
-                  FullyShip te permite enviar dinero a cualquier parte del mundo con la ventaja que es un wallet, donde el dinero está 
-                  disponible como si se tratara de un banco, con los canales de pago disponibles, puede hacer uso de tu dinero de manera
-                  muy fácil sin ningún tipo de barreras. Esta app es ideal para enviar dinero a tus familiares de tercera edad y también
-                  la pudieras usar para pagar a personas freelancer, los cuales pueden estar en cualquier parte del mundo.
+                FullyShip te permite enviar dinero a cualquier parte del mundo con la ventaja que está disponible en un wallet, 
+                donde el dinero está como si se tratara de un banco, con los canales de pago disponibles, puedes hacer uso de tu dinero de manera muy fácil 
+                sin ningún tipo de barreras. Esta aplicación es ideal para enviar dinero a tus familiares de tercera edad y también la podrías usar para 
+                pagar a personas independientes, los cuales pueden estar en cualquier parte del mundo.
                 </p>
 
                 {/* Button */}
                 <div className="max-w-xs mx-auto sm:max-w-none mb-8" data-aos="fade-up" data-aos-anchor="[data-aos-id-3]" data-aos-delay="300">
                   <div>
                     <Link className="btn-sm inline-flex items-center text-blue-50 bg-blue-500 hover:bg-blue-600 group shadow-sm"  to="/apply">
-                      Get your card
+                       Consigue tu tarjeta
                       <span className="tracking-normal text-sky-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2">
                         <svg className="fill-current" width="12" height="10" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 6.002h7.586L6.293 8.295a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.416l-4-4a1 1 0 0 0-1.414 1.416l2.293 2.293H1a1 1 0 1 0 0 2Z" />
@@ -62,7 +62,7 @@ function Section03() {
                   />
                   <div>
                     <blockquote className="text-slate-500 m-0">
-                      “ We know the card market very well and this product provides the speed, flexible account model and API-first approach that no one else can. ”
+                      “ Conocemos muy bien el mercado de las tarjetas y este producto proporciona la velocidad, el modelo de cuenta flexible y el enfoque API primero que nadie más puede ofrecer. ”
                     </blockquote>
                   </div>
                 </div>
