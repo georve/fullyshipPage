@@ -37,7 +37,7 @@ function Section01() {
               </div>
               <h4 className="text-xl font-bold mb-1">Descargue la App</h4>
               <p className="text-slate-500">
-                Con solo descargar la app se inicia su experiencia de enviar y pagar
+               Con solo descargar la app se inicia la experiencia de enviar y pagar
               </p>
             </div>
 
@@ -69,9 +69,9 @@ function Section01() {
                   </g>
                 </svg>
               </div>
-              <h4 className="text-xl font-bold mb-1">Configure su perfil y el de sus padres</h4>
+              <h4 className="text-xl font-bold mb-1">Configura tu perfil y el de tus padres</h4>
               <p className="text-slate-500">
-                Para el envio de dinero tienes que registrar tus datos y el de tus padres en el pais destino.
+               Para el envió de dinero tienes que registrar tus datos y el de tus padres en el país destino.
               </p>
             </div>
 
@@ -102,10 +102,10 @@ function Section01() {
                   </g>
                 </svg>
               </div>
-              <h4 className="text-xl font-bold mb-1">Envia dinero y ya esta disponible para gastarlo en tus comercios</h4>
+              <h4 className="text-xl font-bold mb-1">Envía dinero y ya está disponible para usarlo en tus comercios</h4>
               <p className="text-slate-500">
-                Con la tarjeta de fullyship, huellas digitales o codigos QR puede disponer de tu dinero o incluso lo
-                puedes tener en efectivo para poder hacer uso del mismo.
+               Con la tarjeta de fullship, huellas digitales o códigos QR puedes disponer del dinero o incluso lo 
+               puedes tener en efectivo para poder hacer uso del mismo.
               </p>
             </div>
           </div>

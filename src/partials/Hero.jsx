@@ -21,7 +21,7 @@ function Hero() {
             <div className="md:w-[600px]">
               {/* Copy */}
               <h1 className="h1 text-white mb-6" data-aos="fade-up" data-aos-delay="100">
-                    Envía tus remeses de manera rápida y segura a tus {' '}
+                  Envía tus remesas de manera rápida y segura a tus {' '}
                 <span className="relative inline-flex items-center justify-center">
                   <svg className="absolute -z-10" width="246" height="76" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -34,9 +34,9 @@ function Hero() {
                 </span>
               </h1>
               <p className="text-lg text-blue-200 mb-8" data-aos="fade-up" data-aos-delay="200">
-                 Con fullyship puedes hacerle llegar tu dinero desde cualquier país a tus familiares y con la misma app 
-                 pagar optimizando el uso de tu dinero.
-                <br className="hidden md:block" /> Solo tienes que instalar la App, y empieza a disfrutar de todas las ventajas de enviar dinero y gastarlo.
+              Con fullship puedes enviar dinero desde cualquier país a tus familiares y con la misma app pagar
+              , optimizando el uso de tu dinero.
+                <br className="hidden md:block" /> Solo tienes que instalar la App, y empieza a disfrutar de todas las ventajas de enviar dinero
               </p>
 
               {/* Buttons */}
