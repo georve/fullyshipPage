@@ -42,16 +42,16 @@ function Footer() {
 
           {/* 2nd block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-sm text-slate-100 font-bold mb-3">Essentials</h6>
+            <h6 className="text-sm text-slate-100 font-bold mb-3">Esenciales</h6>
             <ul className="text-sm font-[450] space-y-2">
               <li>
                 <a className="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">
-                  Payments
+                  Pagos
                 </a>
               </li>
               <li>
                 <a className="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">
-                  Budgeting and analytics
+                  Presupuesto y análisis 
                 </a>
               </li>
               <li>
@@ -61,12 +61,12 @@ function Footer() {
               </li>
               <li>
                 <a className="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">
-                  Pockets
+                  Bolsillos
                 </a>
               </li>
               <li>
                 <a className="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">
-                  Subscriptions
+                  Suscripciones
                 </a>
               </li>
             </ul>
@@ -74,31 +74,31 @@ function Footer() {
 
           {/* 3rd block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-sm text-slate-100 font-bold mb-3">Company</h6>
+            <h6 className="text-sm text-slate-100 font-bold mb-3">Compañía</h6>
             <ul className="text-sm font-[450] space-y-2">
               <li>
                 <a className="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">
-                  About us
+                 Sobre nosotros
                 </a>
               </li>
               <li>
                 <a className="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">
-                  Diversity / Inclusion
+                  Diversidad e inclusión
                 </a>
               </li>
               <li>
                 <a className="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">
-                  Sustainability
+                  Sostenibilidad
                 </a>
               </li>
               <li>
                 <a className="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">
-                  Code of conduct
+                 Código de conducta
                 </a>
               </li>
               <li>
                 <a className="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">
-                  Financial statements
+                 Estados financieros
                 </a>
               </li>
             </ul>
@@ -110,12 +110,12 @@ function Footer() {
             <ul className="text-sm font-[450] space-y-2">
               <li>
                 <a className="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">
-                  International products
+                 Productos internacionales
                 </a>
               </li>
               <li>
                 <a className="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">
-                  Currency exchange
+                 Cambio de divisas
                 </a>
               </li>
               <li>
@@ -132,7 +132,7 @@ function Footer() {
             <ul className="text-sm font-[450] space-y-2">
               <li>
                 <a className="text-slate-400 hover:text-blue-500 transition duration-150 ease-in-out" href="#0">
-                  Send us an email
+                 Envíanos un email
                 </a>
               </li>
               <li>
@@ -162,13 +162,14 @@ function Footer() {
         {/* Bottom area */}
         <div className="pb-4 md:pb-8">
           <div className="text-xs text-slate-500">
-            If you would like to find out more about which entity you receive services from please click{' '}
+            Si desea obtener más información sobre la entidad de la que recibe servicios, haga clic{' '}
             <a className="font-medium underline hover:text-blue-500 transition duration-150 ease-in-out" href="#0">
-              here
+              aqui
             </a>{' '}
-            If you have any other questions, please reach out to us via the in-app chat. Custom Bank is a bank established in the Republic of Ireland.
-            Custom Bank is licensed by the European Central Bank and regulated by the Bank of Ireland. Cusom Bank provides credit, payment, current
-            account and demand deposit account services.
+            Si tiene alguna otra pregunta, comuníquese con nosotros a través del chat en la aplicación. 
+            Custom Bank es un banco establecido en la República de Irlanda. Custom Bank tiene licencia del Banco Central Europeo 
+            y está regulado por el Banco de Irlanda. Cusom Bank proporciona servicios de crédito, pago, 
+            cuenta corriente y cuenta de depósito a la vista.
           </div>
         </div>
       </div>

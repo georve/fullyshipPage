@@ -19,10 +19,10 @@ function Section05() {
             <div className="relative max-w-xl mx-auto md:max-w-none text-center md:text-left">
               {/* Section header */}
               <div className="md:max-w-3xl mb-12 md:mb-20" data-aos="fade-up">
-                <h2 className="h2 text-white mb-4">Abre tu cuenta en cuestion de minutos y ya estas en la posibilidad de enviar dinero al instante</h2>
+                <h2 className="h2 text-white mb-4">Abre tu cuenta en cuestión de minutos y ya estás en la posibilidad de enviar dinero al instante</h2>
                 <p className="text-lg text-blue-200 mb-8">
-                 Puedes utilizar tu dinero usando tu app, o tambien puedes enviarlo a tus bancos, nacionales e internacionales, ya que estamos en
-                 expansion e inciamos convenio con une gama de Bancos donde puede masificar la forma como gastas tu dinero.
+                Puedes utilizar tu dinero usando tu app, o también puedes enviarlo a tus bancos, nacionales e internacionales, 
+                ya que estamos en expansión e iniciamos convenio con una gama de Bancos donde puede masificar la forma como utilizas tu dinero
                 </p>
               </div>
 
@@ -51,9 +51,9 @@ function Section05() {
                   <div className="mb-3">
                     <div className="flex items-center justify-center font-bold text-teal-600 bg-teal-200 h-11 w-11 rounded-full">1</div>
                   </div>
-                  <h4 className="text-white text-xl font-bold mb-1">Descargue la App</h4>
+                  <h4 className="text-white text-xl font-bold mb-1">Descarga la App</h4>
                   <p className="text-blue-200">
-                    Desde su playstore preferido, puede descargar fullyShip para iniciar su viaje al envio de remesas.
+                    Desde su playstore preferido, puede descargar fullyShip para iniciar tu viaje al envío de remesas.
                   </p>
                 </div>
 
@@ -62,7 +62,7 @@ function Section05() {
                   <div className="mb-3">
                     <div className="flex items-center justify-center font-bold text-teal-600 bg-teal-200 h-11 w-11 rounded-full">2</div>
                   </div>
-                  <h4 className="text-white text-xl font-bold mb-1">Configure su perfil</h4>
+                  <h4 className="text-white text-xl font-bold mb-1">Configurar su perfil</h4>
                   <p className="text-blue-200">
                     Con pasos sencillos puedes configurar tu perfil y el de tus adultos mayores para que reciban su dinero.
                   </p>
@@ -73,9 +73,9 @@ function Section05() {
                   <div className="mb-3">
                     <div className="flex items-center justify-center font-bold text-teal-600 bg-teal-200 h-11 w-11 rounded-full">3</div>
                   </div>
-                  <h4 className="text-white text-xl font-bold mb-1">Envia dinero a todos sus familiares</h4>
+                  <h4 className="text-white text-xl font-bold mb-1">Envía dinero a todos sus familiares</h4>
                   <p className="text-blue-200">
-                  Con solo pocos click podrás hacerle llegar el dinero a tus familiares y ya podrán hacer uso de su dinero.
+                   Con solo unos pocos click podrás hacerle llegar el dinero a tus familiares y ya podrás hacer uso de su dinero.
                   </p>
                 </div>
               </div>

@@ -21,7 +21,7 @@ function Hero() {
             <div className="md:w-[600px]">
               {/* Copy */}
               <h1 className="h1 text-white mb-6" data-aos="fade-up" data-aos-delay="100">
-                    Envía tus remeses de manera rápida y segura a tus {' '}
+                  Envía remesas de manera rápida y segura a tus {' '}
                 <span className="relative inline-flex items-center justify-center">
                   <svg className="absolute -z-10" width="246" height="76" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -34,9 +34,9 @@ function Hero() {
                 </span>
               </h1>
               <p className="text-lg text-blue-200 mb-8" data-aos="fade-up" data-aos-delay="200">
-                 Con fullyship puedes hacerle llegar tu dinero desde cualquier país a tus familiares y con la misma app 
-                 pagar optimizando el uso de tu dinero.
-                <br className="hidden md:block" /> Solo tienes que instalar la App, y empieza a disfrutar de todas las ventajas de enviar dinero y gastarlo.
+              Con fullship puedes enviar dinero desde cualquier país a tus familiares y con la misma app pagar
+              , optimizando el uso de tu dinero.
+                <br className="hidden md:block" /> Solo tienes que instalar la App, y empieza a disfrutar de todas las ventajas de enviar dinero
               </p>
 
               {/* Buttons */}
@@ -47,7 +47,7 @@ function Hero() {
               >
                 <div>
                   <Link className="btn-sm w-full inline-flex items-center text-slate-100 bg-slate-800 hover:bg-slate-900 group shadow-sm" to="/apply">
-                    Descarga la app
+                  Descarga la aplicación
                     <span className="tracking-normal text-sky-400 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-2">
                       <svg className="fill-current" width="12" height="10" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 6.002h7.586L6.293 8.295a1 1 0 1 0 1.414 1.414l4-4a1 1 0 0 0 0-1.416l-4-4a1 1 0 0 0-1.414 1.416l2.293 2.293H1a1 1 0 1 0 0 2Z" />
