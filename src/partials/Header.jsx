@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from './../images/fullyship.png'
 
 function Header() {
   return (
@@ -10,24 +11,7 @@ function Header() {
           {/* Site branding */}
           <div className="shrink-0 mr-4">
             {/* Logo */}
-            <Link className="block" to="/" aria-label="Cruip">
-              <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-                <g fillRule="nonzero" fill="none">
-                  <g className="fill-blue-50" transform="translate(3 3)">
-                    <circle cx="5" cy="5" r="5" />
-                    <circle cx="19" cy="5" r="5" />
-                    <circle cx="5" cy="19" r="5" />
-                    <circle cx="19" cy="19" r="5" />
-                  </g>
-                  <g className="fill-sky-300">
-                    <circle cx="15" cy="5" r="5" />
-                    <circle cx="25" cy="15" r="5" />
-                    <circle cx="15" cy="25" r="5" />
-                    <circle cx="5" cy="15" r="5" />
-                  </g>
-                </g>
-              </svg>
-            </Link>
+            <img width="50" src={logo} />
           </div>
 
           {/* Desktop navigation */}
