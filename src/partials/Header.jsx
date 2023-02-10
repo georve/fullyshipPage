@@ -11,7 +11,7 @@ function Header() {
           {/* Site branding */}
           <div className="shrink-0 mr-4">
             {/* Logo */}
-            <img src={logo} />
+            <img width="50" src={logo} />
           </div>
 
           {/* Desktop navigation */}

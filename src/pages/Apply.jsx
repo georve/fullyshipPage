@@ -9,6 +9,8 @@ import { createInvestor as createInvestorMutation,
          deleteInvestor as deleteInvestorMutation } from './../graphql/mutations'
 import { listInvestors,getInvestor } from './../graphql/queries'
 import logo from './../images/fullyship.png'
+import usefullPageLoader from './../utils/usefullPageLoader';
+
 
 const initialState = { firstName: '', 
                        lastName:'',
@@ -23,6 +25,9 @@ function Apply() {
   const [formState, setFormState] = useState(initialState)
   const [todos, setTodos] = useState([])
   const [selectedOption, setSelectedOption] = useState(initialState.country);
+  const [loading,setLoading] = useState(false);
+  const [apiError, setApiError] = useState()
+  const [loader,showLoader,hideLoader]=usefullPageLoader();
 
   useEffect(() => {
     fetchTodos()
@@ -33,24 +38,43 @@ function Apply() {
   }
 
   async function fetchTodos() {
+    setLoading(true)
     try {
       const todoData = await API.graphql(graphqlOperation(listInvestors))
       const todos = todoData.data.listInvestors.items
       setTodos(todos)
     } catch (err) { console.log('error fetching todos') }
+    finally {
+      setLoading(false)
+    }
   }
 
   async function addTodo() {
     try {
       if (!formState.firstName || !formState.lastName) return
+      setLoading(true)
+      showLoader();
       const todo = { ...formState }
       setTodos([...todos, todo])
       setFormState(initialState)
       await API.graphql(graphqlOperation(createInvestorMutation, {input: todo}))
     } catch (err) {
       console.log('error creating todo:', err)
+    }    finally {
+      setLoading(false)
+      hideLoader();
     }
   }
+
+  const errorMessage = apiError && (
+    <p style={styles.errorText}>
+      {apiError.errors.map((error) => (
+        <p>{error.message}</p>
+      ))}
+    </p>
+  )
+
+
 
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
@@ -62,7 +86,7 @@ function Apply() {
             <div className="shrink-0 mr-4">
               {/* Logo */}
               <Link className="block" to="/" aria-label="Cruip">
-              <img src={logo} />
+              <img width="50" src={logo} />
               </Link>
             </div>
           </div>
@@ -137,6 +161,8 @@ function Apply() {
 
                   <div className="flex pt-12 lg:pt-0 lg:pl-12 xl:pl-20">
                     <div className="w-full max-w-[480px] mx-auto lg:w-[480px] lg:max-w-none lg:mx-0 xl:w-[512px] bg-white p-6 shadow-2xl">
+                    {errorMessage}
+                      
                       {/* Form */}
                       <form onSubmit={addTodo}>
                         <div className="space-y-4">
@@ -237,6 +263,7 @@ function Apply() {
           </div>
         </section>
       </main>
+      {loader}
     </div>
   );
 }
