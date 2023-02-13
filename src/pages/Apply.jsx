@@ -101,7 +101,7 @@ function Apply() {
               <div className="lg:flex lg:space-x-12 xl:space-x-16">
                 {/* Left side */}
                 <div className="grow lg:mt-16 mb-16 lg:mb-0 text-center lg:text-left">
-                  <h1 className="h2 mb-8">Se parte de la solucion para remesas en Venezuela</h1>
+                  <h1 className="h2 mb-8">Nuestra app está en construcción y pronto podrás hacer uso de la misma..</h1>
 
                   <div className="mb-12">
                     <ul className="inline-flex flex-col text-slate-500 space-y-2.5">
@@ -113,7 +113,7 @@ function Apply() {
                             d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z"
                           />
                         </svg>
-                        <span>Descarga la App</span>
+                        <span>Llena en formulario</span>
                       </li>
                       <li className="flex items-center text-left">
                         <svg className="shrink-0 mr-3" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -123,7 +123,7 @@ function Apply() {
                             d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z"
                           />
                         </svg>
-                        <span>Configura tu perfil y el de tus adultos mayores</span>
+                        <span>Activa tu correo para ser parte de nuestra comunidad</span>
                       </li>
                       <li className="flex items-center text-left">
                         <svg className="shrink-0 mr-3" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +133,7 @@ function Apply() {
                             d="M15.335 7.933 14.87 7c-4.025 1.167-6.067 3.733-6.067 3.733l-1.867-1.4-.933.934L8.802 14c2.158-4.025 6.533-6.067 6.533-6.067Z"
                           />
                         </svg>
-                        <span>Envia dinero con solo unos clicks y ya puedes usar tu dinero rapido y seguro.</span>
+                        <span>Tan pronto y tengamos avances te haremos llegar la URL de descarga.</span>
                       </li>
                     </ul>
                   </div>
